@@ -1,0 +1,40 @@
+### Test Go Image API
+### Base URL
+@baseUrl = http://localhost:8080
+
+### 1. Test root endpoint
+GET {{baseUrl}}/
+Content-Type: application/json
+
+###
+
+### 2. Test images endpoint (should serve static files)  
+GET {{baseUrl}}/images/
+Content-Type: application/json
+
+###
+
+### 3. Test API images endpoint (get image list)
+GET {{baseUrl}}/api/images
+Content-Type: application/json
+
+###
+
+### 4. Health check endpoint
+GET {{baseUrl}}/health
+Content-Type: application/json
+
+###
+
+### 5. Test production endpoint
+@prodUrl = http://localhost:8080
+GET {{prodUrl}}/
+Content-Type: application/json
+
+###
+
+### 6. Test non-existent endpoint (should return 404)
+GET {{baseUrl}}/nonexistent
+Content-Type: application/json
+
+###

@@ -1,0 +1,13 @@
+.git
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+.env.developer
+*.md
+bin/
+scripts/
+*.ps1
+*.bat
+api-test.http
+test-api.ps1
