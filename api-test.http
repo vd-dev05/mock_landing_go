@@ -14,26 +14,32 @@ Content-Type: application/json
 
 ###
 
-### 3. Test API images endpoint (get image list)
+### 3. Test specific image file
+GET {{baseUrl}}/images/learn-anywhere.svg
+Content-Type: image/svg+xml
+
+###
+
+### 4. Test API images endpoint (get image list)
 GET {{baseUrl}}/api/images
 Content-Type: application/json
 
 ###
 
-### 4. Health check endpoint
+### 5. Health check endpoint
 GET {{baseUrl}}/health
 Content-Type: application/json
 
 ###
 
-### 5. Test production endpoint
+### 6. Test production endpoint
 @prodUrl = http://localhost:8080
 GET {{prodUrl}}/
 Content-Type: application/json
 
 ###
 
-### 6. Test non-existent endpoint (should return 404)
+### 7. Test non-existent endpoint (should return 404)
 GET {{baseUrl}}/nonexistent
 Content-Type: application/json
 

@@ -1,0 +1,5 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#059669"/>
+  <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="20" font-family="Arial">Personalized Lessons</text>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#D1FAE5" font-size="14" font-family="Arial">AI-driven recommendations</text>
+</svg>

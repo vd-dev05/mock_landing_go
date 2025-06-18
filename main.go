@@ -44,7 +44,6 @@ func main() {
 		w.Header().Set("Content-Type", "application/json")
 		w.Write([]byte(`{"status": "healthy", "timestamp": "` + time.Now().Format(time.RFC3339) + `"}`))
 	})
-
 	// API endpoint để lấy danh sách images
 	http.HandleFunc("/api/images", func(w http.ResponseWriter, r *http.Request) {
 		baseURL := os.Getenv("BASE_URL")
@@ -53,14 +52,14 @@ func main() {
 				{
 					Title:       "Learn Anywhere",
 					Description: "Listen while commuting, cooking or exercising. Stay productive with your time.",
-					Thumbnail:   baseURL + "/images/learn-anywhere.png",
-					URL:         baseURL + "/images/learn-anywhere.png",
+					Thumbnail:   baseURL + "/images/learn-anywhere.svg",
+					URL:         baseURL + "/images/learn-anywhere.svg",
 				},
 				{
 					Title:       "Personalized Lessons",
 					Description: "Each story adapts to your level and goal with AI-driven recommendations.",
-					Thumbnail:   baseURL + "/images/personalized.png",
-					URL:         baseURL + "/images/personalized.png",
+					Thumbnail:   baseURL + "/images/personalized.svg",
+					URL:         baseURL + "/images/personalized.svg",
 				},
 			},
 		}
