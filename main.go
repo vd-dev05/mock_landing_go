@@ -61,6 +61,12 @@ func main() {
 					Thumbnail:   baseURL + "/images/personalized.svg",
 					URL:         baseURL + "/images/personalized.svg",
 				},
+				{
+					Title:       "Listen& Repeat",
+					Description: "10 mins activity • Now available",
+					Thumbnail:   baseURL + "/images/phone.png",
+					URL:         baseURL + "/images/phone.png",
+				},
 			},
 		}
 		w.Header().Set("Content-Type", "application/json")
